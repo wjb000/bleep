@@ -1,0 +1,160 @@
+{
+ "total_mass_kg": 1.104,
+ "plastic_g": 327.0,
+ "height_mm": 342.5,
+ "width_mm": 142.2,
+ "depth_mm": 98.0,
+ "com_world_mm": [
+  -4.6,
+  0.2,
+  170.9
+ ],
+ "n_printed_parts": 14,
+ "n_servos": 11,
+ "zero_pose_interferences": [],
+ "sweep": [
+  {
+   "joint": "l_hip_yaw",
+   "range_deg": [
+    -25,
+    25
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": null,
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": null
+  },
+  {
+   "joint": "l_hip_roll",
+   "range_deg": [
+    -20,
+    20
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": [
+    -17.5,
+    "l_shin",
+    "r_shin"
+   ],
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": null
+  },
+  {
+   "joint": "l_hip_pitch",
+   "range_deg": [
+    -90,
+    30
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": null,
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": null
+  },
+  {
+   "joint": "l_knee",
+   "range_deg": [
+    -5,
+    110
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": null,
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": null
+  },
+  {
+   "joint": "l_ankle",
+   "range_deg": [
+    -45,
+    45
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": null,
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": null
+  },
+  {
+   "joint": "r_hip_yaw",
+   "range_deg": [
+    -25,
+    25
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": null,
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": null
+  },
+  {
+   "joint": "r_hip_roll",
+   "range_deg": [
+    -20,
+    20
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": null,
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": [
+    17.5,
+    "r_shin",
+    "l_shin"
+   ]
+  },
+  {
+   "joint": "r_hip_pitch",
+   "range_deg": [
+    -90,
+    30
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": null,
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": null
+  },
+  {
+   "joint": "r_knee",
+   "range_deg": [
+    -5,
+    110
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": null,
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": null
+  },
+  {
+   "joint": "r_ankle",
+   "range_deg": [
+    -45,
+    45
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": null,
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": null
+  },
+  {
+   "joint": "neck_yaw",
+   "range_deg": [
+    -120,
+    120
+   ],
+   "neg_first_contact_self": null,
+   "neg_first_contact_other_leg": null,
+   "pos_first_contact_self": null,
+   "pos_first_contact_other_leg": null
+  }
+ ],
+ "link_mass_g": {
+  "base": 373.4,
+  "l_hip_yaw": 74.1,
+  "l_hip_roll": 80.6,
+  "l_hip_pitch": 75.5,
+  "l_knee": 75.0,
+  "l_ankle": 21.7,
+  "r_hip_yaw": 74.1,
+  "r_hip_roll": 80.6,
+  "r_hip_pitch": 75.5,
+  "r_knee": 75.0,
+  "r_ankle": 21.7,
+  "head": 76.5
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "l_hip_bracket": {
+  "up_axis": "+x",
+  "overhang_mm2": 624.0,
+  "overhang_pct": 4.2,
+  "bed_contact_mm2": 786.0,
+  "extents_mm": [
+   33.7,
+   54.9,
+   39.9
+  ],
+  "fits_256_bed": true,
+  "mass_g": 16.1,
+  "volume_cm3": 18.6
+ },
+ "r_hip_bracket": {
+  "up_axis": "+x",
+  "overhang_mm2": 624.0,
+  "overhang_pct": 4.2,
+  "bed_contact_mm2": 786.0,
+  "extents_mm": [
+   33.7,
+   54.9,
+   39.9
+  ],
+  "fits_256_bed": true,
+  "mass_g": 16.1,
+  "volume_cm3": 18.6
+ },
+ "l_hip_carrier": {
+  "up_axis": "+y",
+  "overhang_mm2": 1046.0,
+  "overhang_pct": 5.4,
+  "bed_contact_mm2": 786.0,
+  "extents_mm": [
+   61.0,
+   71.6,
+   44.5
+  ],
+  "fits_256_bed": true,
+  "mass_g": 22.6,
+  "volume_cm3": 26.1
+ },
+ "r_hip_carrier": {
+  "up_axis": "-y",
+  "overhang_mm2": 1046.0,
+  "overhang_pct": 5.4,
+  "bed_contact_mm2": 786.0,
+  "extents_mm": [
+   61.0,
+   71.6,
+   44.5
+  ],
+  "fits_256_bed": true,
+  "mass_g": 22.6,
+  "volume_cm3": 26.1
+ },
+ "l_thigh": {
+  "up_axis": "-y",
+  "overhang_mm2": 1298.0,
+  "overhang_pct": 7.9,
+  "bed_contact_mm2": 1116.0,
+  "extents_mm": [
+   32.9,
+   94.4,
+   41.1
+  ],
+  "fits_256_bed": true,
+  "mass_g": 17.5,
+  "volume_cm3": 20.1
+ },
+ "r_thigh": {
+  "up_axis": "+y",
+  "overhang_mm2": 1298.0,
+  "overhang_pct": 7.9,
+  "bed_contact_mm2": 1116.0,
+  "extents_mm": [
+   32.9,
+   94.4,
+   41.1
+  ],
+  "fits_256_bed": true,
+  "mass_g": 17.5,
+  "volume_cm3": 20.1
+ },
+ "l_shin": {
+  "up_axis": "-y",
+  "overhang_mm2": 1292.0,
+  "overhang_pct": 8.0,
+  "bed_contact_mm2": 982.0,
+  "extents_mm": [
+   32.9,
+   89.4,
+   41.1
+  ],
+  "fits_256_bed": true,
+  "mass_g": 17.0,
+  "volume_cm3": 19.5
+ },
+ "r_shin": {
+  "up_axis": "+y",
+  "overhang_mm2": 1292.0,
+  "overhang_pct": 8.0,
+  "bed_contact_mm2": 982.0,
+  "extents_mm": [
+   32.9,
+   89.4,
+   41.1
+  ],
+  "fits_256_bed": true,
+  "mass_g": 17.0,
+  "volume_cm3": 19.5
+ },
+ "l_foot": {
+  "up_axis": "+z",
+  "overhang_mm2": 140.0,
+  "overhang_pct": 1.0,
+  "bed_contact_mm2": 4528.0,
+  "extents_mm": [
+   96.0,
+   50.1,
+   41.0
+  ],
+  "fits_256_bed": true,
+  "mass_g": 21.7,
+  "volume_cm3": 25.0
+ },
+ "r_foot": {
+  "up_axis": "+z",
+  "overhang_mm2": 140.0,
+  "overhang_pct": 1.0,
+  "bed_contact_mm2": 4528.0,
+  "extents_mm": [
+   96.0,
+   50.1,
+   41.0
+  ],
+  "fits_256_bed": true,
+  "mass_g": 21.7,
+  "volume_cm3": 25.0
+ },
+ "body_tub": {
+  "up_axis": "+z",
+  "overhang_mm2": 1766.0,
+  "overhang_pct": 4.0,
+  "bed_contact_mm2": 4813.0,
+  "extents_mm": [
+   80.0,
+   128.0,
+   42.0
+  ],
+  "fits_256_bed": true,
+  "mass_g": 43.2,
+  "volume_cm3": 49.8
+ },
+ "body_lid": {
+  "up_axis": "+y",
+  "overhang_mm2": 3921.0,
+  "overhang_pct": 10.0,
+  "bed_contact_mm2": 645.0,
+  "extents_mm": [
+   80.0,
+   41.1,
+   128.0
+  ],
+  "fits_256_bed": true,
+  "mass_g": 40.2,
+  "volume_cm3": 46.3
+ },
+ "head_shell": {
+  "up_axis": "+x",
+  "overhang_mm2": 4662.0,
+  "overhang_pct": 12.4,
+  "bed_contact_mm2": 359.0,
+  "extents_mm": [
+   59.4,
+   92.0,
+   94.0
+  ],
+  "fits_256_bed": true,
+  "mass_g": 33.2,
+  "volume_cm3": 38.3
+ },
+ "head_base": {
+  "up_axis": "+z",
+  "overhang_mm2": 3.0,
+  "overhang_pct": 0.0,
+  "bed_contact_mm2": 6592.0,
+  "extents_mm": [
+   93.2,
+   92.9,
+   28.0
+  ],
+  "fits_256_bed": true,
+  "mass_g": 20.3,
+  "volume_cm3": 23.4
+ }
+}
