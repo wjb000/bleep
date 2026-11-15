@@ -19,9 +19,9 @@
 <section class="hero" id="model">
   <div class="hero-text">
     <p class="kicker">Open-source desk droid</p>
-    <h1>Bleep walks, looks around and beeps back.</h1>
+    <h1>Bleep is a little droid that looks around, beeps back, and is learning to walk.</h1>
     <p class="lede">A 34 cm two-legged droid you can print in a weekend. It has 11 smart servos, an ESP32-S3 brain with a camera eye, and a round LCD face.
-      It learned to walk in MuJoCo, and the same network runs on the robot.</p>
+      Its walking controller is being trained in MuJoCo, and the same network runs on the robot. It does not walk reliably yet.</p>
     <div class="stats" id="stats"></div>
     <div class="cta"><a class="btn primary" href="#build">Download &amp; build</a><a class="btn" href="https://github.com/wjb000/bleep">Source on GitHub</a></div>
   </div>
@@ -41,7 +41,7 @@
 <section id="does">
   <h2>What it does out of the box</h2>
   <div class="cards">
-    <div class="card"><h3>Walks and turns</h3><p>The walking policy is a 23k-parameter network trained with PPO, running at 50 Hz on the ESP32-S3. Steer it from your phone over its own Wi-Fi, or tap its dome to start and stop.</p><span class="tag ok">Trained in sim</span></div>
+    <div class="card"><h3>Walking and turning (in progress)</h3><p>The walking policy is a 23k-parameter network trained with PPO, running at 50 Hz on the ESP32-S3. Steer it from your phone over its own Wi-Fi, or tap its dome to start and stop.</p><span class="tag warn">In training: not walking reliably yet</span></div>
     <div class="card"><h3>Looks around</h3><p>A camera sits beside the eye. The dome turns to follow movement it sees (up to ±86° while tracking; the joint itself turns ±120°).</p><span class="tag ok">In firmware</span></div>
     <div class="card"><h3>Hears and feels</h3><p>A microphone and a copper touch pad inside the dome. A loud sound makes it curious; a pat makes it happy.</p><span class="tag ok">In firmware</span><span class="tag">Loudness only, no words yet</span></div>
     <div class="card"><h3>Has a face</h3><p>A 1.28" round LCD eye blinks and changes mood (idle, happy, curious, sleepy, sad, low battery), with matching chirps from a piezo buzzer.</p><span class="tag ok">In firmware</span></div>
