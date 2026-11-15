@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bleep: an open-source desk droid that walks</title>
+<meta name="description" content="Bleep is a 34 cm, 11-servo, 3D-printable walking desk droid with an ESP32-S3 brain, a camera eye and a face. Open CAD, sim and firmware.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2214%22 fill=%22%232c9a92%22 stroke=%22%231d232b%22 stroke-width=%223%22/%3E%3C/svg%3E">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#"><span class="dot"></span>bleep</a>
+  <nav><a href="#model">Model</a><a href="#does">What it does</a><a href="#servos">Servos</a><a href="#bom">Parts</a><a href="#sim2real">Sim2real</a><a href="#build">Build it</a>
+  <a class="gh" href="https://github.com/wjb000/bleep">GitHub</a></nav>
+</header>
+
+<section class="hero" id="model">
+  <div class="hero-text">
+    <p class="kicker">Open-source desk droid</p>
+    <h1>Bleep walks, looks around and beeps back.</h1>
+    <p class="lede">A 34 cm two-legged droid you can print in a weekend. It has 11 smart servos, an ESP32-S3 brain with a camera eye, and a round LCD face.
+      It learned to walk in MuJoCo, and the same network runs on the robot.</p>
+    <div class="stats" id="stats"></div>
+    <div class="cta"><a class="btn primary" href="#build">Download &amp; build</a><a class="btn" href="https://github.com/wjb000/bleep">Source on GitHub</a></div>
+  </div>
+  <div class="viewer-wrap">
+    <div id="viewer"><div id="labels"></div></div>
+    <div class="vbar">
+      <button data-view="front">Front</button><button data-view="34">3/4</button><button data-view="side">Side</button><button data-view="back">Back</button>
+      <span class="sep"></span>
+      <button id="lbls">Labels</button><button id="xray">X-ray</button>
+      <span class="sep"></span>
+      <select id="clip" aria-label="replay clip"></select><button id="play">&#9654; Play sim walk</button>
+    </div>
+    <div id="vinfo" class="vinfo"></div>
+  </div>
+</section>
+
+<section id="does">
+  <h2>What it does out of the box</h2>
+  <div class="cards">
+    <div class="card"><h3>Walks and turns</h3><p>The walking policy is a 23k-parameter network trained with PPO, running at 50 Hz on the ESP32-S3. Steer it from your phone over its own Wi-Fi, or tap its dome to start and stop.</p><span class="tag ok">Trained in sim</span></div>
+    <div class="card"><h3>Looks around</h3><p>A camera sits beside the eye. The dome turns to follow movement it sees (up to ±86° while tracking; the joint itself turns ±120°).</p><span class="tag ok">In firmware</span></div>
+    <div class="card"><h3>Hears and feels</h3><p>A microphone and a copper touch pad inside the dome. A loud sound makes it curious; a pat makes it happy.</p><span class="tag ok">In firmware</span><span class="tag">Loudness only, no words yet</span></div>
+    <div class="card"><h3>Has a face</h3><p>A 1.28" round LCD eye blinks and changes mood (idle, happy, curious, sleepy, sad, low battery), with matching chirps from a piezo buzzer.</p><span class="tag ok">In firmware</span></div>
+    <div class="card"><h3>Knows when it fell</h3><p>The IMU detects a fall: the legs go limp to protect the servos, the face turns sad, and it stands back up into its crouch once you set it upright.</p><span class="tag ok">In firmware</span><span class="tag warn">Self get-up: not trained yet</span></div>
+    <div class="card"><h3>Hackable</h3><p>Every part is parametric CadQuery. The URDF and MuJoCo model come from the same CAD, so if you change a dimension you can retrain.</p><span class="tag ok">Open source</span></div>
+  </div>
+</section>
+
+<section id="servos">
+  <h2>Why these servos</h2>
+  <p class="sub">Every joint was sized from the robot's real mass and pose, not a guess.
+    <span id="tq-rule"></span></p>
+  <div class="tablewrap"><table id="servo-table"></table></div>
+  <p class="note" id="servo-note"></p>
+</section>
+
+<section id="bom">
+  <h2>Parts: <span id="bom-total"></span> per robot</h2>
+  <p class="sub" id="bom-sub"></p>
+  <div class="tablewrap"><table id="bom-table"></table></div>
+  <p class="note" id="bom-note"></p>
+</section>
+
+<section id="sim2real">
+  <h2>Sim2real: what has been checked</h2>
+  <p class="sub">Everything below is produced by scripts in the repo. Nothing has been built or printed yet. These are simulation and bench-code results, and they are labelled as such.</p>
+  <div class="checks" id="checks"></div>
+  <div class="split">
+    <div><h3>Training curve</h3><canvas id="curve" width="560" height="260"></canvas><p class="note" id="curve-note"></p></div>
+    <div><h3>Walking policy in sim</h3><div class="tablewrap"><table id="eval-table"></table></div><p class="note" id="eval-note"></p></div>
+  </div>
+  <h3>The pipeline</h3>
+  <ol class="pipe">
+    <li><b>One CAD source.</b> <code>cad/bleep.py</code> builds the printed parts. The same script writes the URDF, the MJCF, the masses and inertias (PLA at 70% fill, servos 58 g each) and this 3D model.</li>
+    <li><b>Servo model, not ideal motors.</b> <code>sim/servo.py</code> models the STS3215's P-controller with a speed-dependent torque limit, plus joint friction, damping and rotor inertia.</li>
+    <li><b>Domain randomisation.</b> Training varies everything a real build varies:
+      friction 0.5-1.2, link mass ±10%, body COM ±1 cm, servo gain ±20%, stall torque 85-110%, zero offsets ±0.03 rad,
+      joint damping and friction, 0-1 step of latency, sensor noise, and shoves every 2-5 s.</li>
+    <li><b>System ID.</b> <code>sim/sysid.py</code> records a servo swinging a weighted arm and fits gain, damping, friction and stall torque, so the randomisation is centred on your servos.</li>
+    <li><b>Bit-exact deployment.</b> The network is exported to C. The firmware's C forward pass is checked against PyTorch on random inputs.</li>
+  </ol>
+</section>
+
+<section id="build">
+  <h2>Build it</h2>
+  <div class="cards dl">
+    <a class="card" href="downloads/bleep_print_stl.zip"><h3>Print files</h3><p>14 STLs, already oriented for printing.</p></a>
+    <a class="card" href="downloads/bleep_step.zip"><h3>CAD (STEP)</h3><p>Every part, plus the full assembly with the real servo models.</p></a>
+    <a class="card" href="downloads/bleep_sim.zip"><h3>Robot model</h3><p>URDF and MuJoCo MJCF, with meshes and the servo model.</p></a>
+    <a class="card" href="downloads/bleep_firmware.zip"><h3>Firmware</h3><p>Arduino sketch for the XIAO ESP32S3 Sense, plus the calibration tool.</p></a>
+    <a class="card" href="https://github.com/wjb000/bleep/blob/main/docs/PRINT_GUIDE.md"><h3>Print guide</h3><p>Settings, orientations and supports.</p></a>
+    <a class="card" href="https://github.com/wjb000/bleep/blob/main/docs/ASSEMBLY.md"><h3>Assembly guide</h3><p>IDs, wiring, zeroing and the first walk.</p></a>
+  </div>
+</section>
+
+<footer>Bleep is an original design. Code is MIT-licensed. CAD and docs are CC BY-SA 4.0. The STS3215 STEP model is from the SO-ARM100 project (Apache-2.0). Bleep is inspired by the idea of small, friendly droids; it is not affiliated with any film franchise.</footer>
+
+<script type="module" src="assets/viewer.js"></script>
+<script type="module" src="assets/site.js"></script>
+</body>
+</html>
