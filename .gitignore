@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+cad/.cache/
+cad/vendor_fetched/
+sim/runs/*
+!sim/runs/walk/
+sim/runs/walk/*
+!sim/runs/walk/progress.csv
+!sim/runs/walk/policy.json
+site/downloads/
+logs/
+build/
+cad/stl/
+*.glb
+*.npz
+*.zip
