@@ -1,0 +1,107 @@
+{
+ "robot_mass_kg": 1.104,
+ "scenarios": {
+  "double stance, home crouch (sim, per leg)": {
+   "hip_yaw": 0.0,
+   "hip_roll": 0.001,
+   "hip_pitch": 0.02,
+   "knee": 0.14,
+   "ankle": 0.015
+  },
+  "double stance, deep squat for sit / get-up (sim, per leg)": {
+   "hip_yaw": 0.006,
+   "hip_roll": 0.002,
+   "hip_pitch": 0.031,
+   "knee": 0.089,
+   "ankle": 0.001
+  },
+  "single stance, home crouch, swing leg up": {
+   "hip_yaw": 0.0,
+   "hip_roll": 0.491,
+   "hip_pitch": 0.001,
+   "knee": 0.246,
+   "ankle": 0.001
+  },
+  "single stance, deeper crouch (knee 70 deg)": {
+   "hip_yaw": 0.0,
+   "hip_roll": 0.491,
+   "hip_pitch": 0.001,
+   "knee": 0.341,
+   "ankle": 0.01
+  }
+ },
+ "worst_static_nm": {
+  "hip_yaw": 0.006,
+  "hip_roll": 0.491,
+  "hip_pitch": 0.031,
+  "knee": 0.341,
+  "ankle": 0.015
+ },
+ "dynamic_factor": 2.0,
+ "design_peak_nm": {
+  "hip_yaw": 0.013,
+  "hip_roll": 0.982,
+  "hip_pitch": 0.062,
+  "knee": 0.681,
+  "ankle": 0.03
+ },
+ "candidates": {
+  "Feetech STS3215-C001 (6.4 V)": {
+   "spec": {
+    "stall": 1.65,
+    "rated": 0.42,
+    "mass_g": 55,
+    "price": 13.89,
+    "feedback": true
+   },
+   "robot_mass_kg": 1.104,
+   "worst_static_nm": 0.491,
+   "static_pct_of_stall": 30,
+   "walking_peak_pct_of_stall": 60,
+   "ok": true
+  },
+  "Feetech STS3032 (6 V)": {
+   "spec": {
+    "stall": 0.44,
+    "rated": 0.15,
+    "mass_g": 20,
+    "price": 32.99,
+    "feedback": true
+   },
+   "robot_mass_kg": 0.719,
+   "worst_static_nm": 0.32,
+   "static_pct_of_stall": 73,
+   "walking_peak_pct_of_stall": 145,
+   "ok": false
+  },
+  "Feetech SCS0009 (6 V)": {
+   "spec": {
+    "stall": 0.23,
+    "rated": 0.07,
+    "mass_g": 13,
+    "price": 9.0,
+    "feedback": true
+   },
+   "robot_mass_kg": 0.642,
+   "worst_static_nm": 0.286,
+   "static_pct_of_stall": 124,
+   "walking_peak_pct_of_stall": 248,
+   "ok": false
+  },
+  "TowerPro SG90 (5 V)": {
+   "spec": {
+    "stall": 0.18,
+    "rated": 0.05,
+    "mass_g": 9,
+    "price": 2.5,
+    "feedback": false
+   },
+   "robot_mass_kg": 0.598,
+   "worst_static_nm": 0.266,
+   "static_pct_of_stall": 148,
+   "walking_peak_pct_of_stall": 296,
+   "ok": false
+  }
+ },
+ "rule": "cheapest servo with position feedback whose worst static load is <= ~1/3 of stall, so 2x walking peaks stay <= ~2/3 of stall"
+}
