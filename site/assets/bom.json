@@ -1,0 +1,154 @@
+{
+ "checked": "2026-11-14",
+ "currency": "USD",
+ "rows": [
+  {
+   "item": "Feetech STS3215-C001 serial bus servo, 7.4 V, 19.5 kg-cm, magnetic encoder",
+   "qty": 11,
+   "unit_usd": 13.89,
+   "pack": "2-499 pcs price",
+   "robot_usd": 152.79,
+   "link": "https://www.alibaba.com/product-detail/Feetech-STS3215-19KG-7-4V-Dual_1601651378267.html",
+   "role": "10 leg joints + dome yaw"
+  },
+  {
+   "item": "Seeed XIAO ESP32S3 Sense (camera, mic, 8 MB PSRAM)",
+   "qty": 1,
+   "unit_usd": 19.99,
+   "pack": "",
+   "robot_usd": 19.99,
+   "link": "https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html",
+   "role": "brain, camera eye, ears, Wi-Fi"
+  },
+  {
+   "item": "Waveshare Bus Servo Adapter (A)",
+   "qty": 1,
+   "unit_usd": 4.99,
+   "pack": "",
+   "robot_usd": 4.99,
+   "link": "https://www.waveshare.com/product/bus-servo-adapter-a.htm",
+   "role": "UART to half-duplex servo bus, power distribution"
+  },
+  {
+   "item": "1.28\" round GC9A01 240x240 IPS LCD",
+   "qty": 1,
+   "unit_usd": 6.24,
+   "pack": "",
+   "robot_usd": 6.24,
+   "link": "https://www.amazon.com/Display-Module-Interface-240x240-Arduino/dp/B0H8P12XMC",
+   "role": "the face / eye"
+  },
+  {
+   "item": "MPU-6050 GY-521 IMU",
+   "qty": 1,
+   "unit_usd": 8.59,
+   "pack": "3-pack",
+   "robot_usd": 2.86,
+   "link": "https://www.amazon.com/Kureelect-GY-521-Accelerometer-Compatible-Microcontroller/dp/B0H74JW12P",
+   "role": "balance + fall detection"
+  },
+  {
+   "item": "Pololu D36V6F5 5 V 600 mA step-down regulator",
+   "qty": 1,
+   "unit_usd": 6.95,
+   "pack": "",
+   "robot_usd": 6.95,
+   "link": "https://www.pololu.com/product/3792",
+   "role": "5 V for XIAO + LCD (sits in the head)"
+  },
+  {
+   "item": "LiFePO4 IFR18650 3.2 V 1500 mAh cell",
+   "qty": 2,
+   "unit_usd": 10.69,
+   "pack": "",
+   "robot_usd": 21.38,
+   "link": "https://onlybatteries.com/3-2-volt-lifepo4-18650-battery-1500-mah/",
+   "role": "2S pack, 6.4 V nominal / 7.3 V full"
+  },
+  {
+   "item": "2S LiFePO4 protection board (BMS)",
+   "qty": 1,
+   "unit_usd": 6.33,
+   "pack": "",
+   "robot_usd": 6.33,
+   "link": "https://www.amazon.com/Midzoo-Protection-Charging-Recovery-LightPower/dp/B0982CLQCS",
+   "role": "over-charge/discharge/short protection"
+  },
+  {
+   "item": "Passive piezo buzzer",
+   "qty": 1,
+   "unit_usd": 9.02,
+   "pack": "10-pack",
+   "robot_usd": 0.9,
+   "link": "https://www.amazon.com/MusRock-Frequency-Controllable-Electronic-Projects/dp/B0GXDX6ZY4",
+   "role": "beeps and chirps"
+  },
+  {
+   "item": "5.5x2.1 mm panel DC jack",
+   "qty": 1,
+   "unit_usd": 6.79,
+   "pack": "10-pack",
+   "robot_usd": 0.68,
+   "link": "https://www.amazon.com/CESS-Socket-Threaded-Connector-Adapter/dp/B07FK6MMGH",
+   "role": "charge port"
+  },
+  {
+   "item": "SS12D00 slide switch",
+   "qty": 1,
+   "unit_usd": 10.29,
+   "pack": "10-pack",
+   "robot_usd": 1.03,
+   "link": "https://www.amazon.com/dp/B07QC8HHCZ",
+   "role": "power switch"
+  },
+  {
+   "item": "Copper foil tape (5 cm used)",
+   "qty": 1,
+   "unit_usd": 8.99,
+   "pack": "10 m roll",
+   "robot_usd": 0.1,
+   "link": "https://www.amazon.com/MWRF-Source-Copper-Conductive-Adhesive/dp/B09FJ549C9",
+   "role": "capacitive touch pad inside the dome"
+  },
+  {
+   "item": "Silicone wire, 26 AWG (~2 m used)",
+   "qty": 1,
+   "unit_usd": 12.48,
+   "pack": "multi-colour kit",
+   "robot_usd": 1.0,
+   "link": "https://www.amazon.com/BNTECHGO-16-30-Gauge-Silicone-colors/dp/B01M9800TG",
+   "role": "harness"
+  },
+  {
+   "item": "M2/M3 screws + M3 heat-set inserts (~100 pcs used)",
+   "qty": 1,
+   "unit_usd": 15.41,
+   "pack": "kit, ~1/2 used",
+   "robot_usd": 7.71,
+   "link": "https://www.amazon.com/Mardatt-Threaded-Stainless-Printing-Components/dp/B0DRVJVQSD",
+   "role": "fasteners"
+  },
+  {
+   "item": "PLA filament (~360 g incl. 10% waste)",
+   "qty": 1,
+   "unit_usd": 19.99,
+   "pack": "1 kg refill",
+   "robot_usd": 7.2,
+   "link": "https://us.store.bambulab.com/products/pla-basic-filament",
+   "role": "14 printed parts"
+  }
+ ],
+ "total_usd": 240.15,
+ "servo_share": 0.636,
+ "charger": {
+  "item": "Bioenno 7.3 V 2 A LiFePO4 charger, 5.5x2.1 DC plug",
+  "usd": 24.99,
+  "link": "https://www.bioennopower.com/products/7-3v-2a-ac-to-dc-charger-dc-plug-for-6v-lifepo4-batteries-bpc-0602dc"
+ },
+ "retail_servo": {
+  "note": "Same servo at retail, 1 pc: Waveshare ST3215 $21.99",
+  "link": "https://www.waveshare.com/st3215-servo.htm?sku=22414",
+  "usd": 21.99
+ },
+ "total_with_retail_servos_usd": 329.25
+}

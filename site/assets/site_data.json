@@ -1,0 +1,1301 @@
+{
+ "summary": {
+  "total_mass_kg": 1.104,
+  "plastic_g": 327.0,
+  "height_mm": 342.5,
+  "width_mm": 142.2,
+  "depth_mm": 98.0,
+  "n_printed_parts": 14,
+  "n_servos": 11
+ },
+ "zero_pose_interferences": 0,
+ "sweep_contacts": [
+  {
+   "joint": "l_hip_roll",
+   "side": "neg",
+   "deg": -17.5,
+   "what": "other_leg",
+   "parts": [
+    "l_shin",
+    "r_shin"
+   ]
+  },
+  {
+   "joint": "r_hip_roll",
+   "side": "pos",
+   "deg": 17.5,
+   "what": "other_leg",
+   "parts": [
+    "r_shin",
+    "l_shin"
+   ]
+  }
+ ],
+ "n_joints_swept": 11,
+ "bom": {
+  "checked": "2026-11-14",
+  "currency": "USD",
+  "rows": [
+   {
+    "item": "Feetech STS3215-C001 serial bus servo, 7.4 V, 19.5 kg-cm, magnetic encoder",
+    "qty": 11,
+    "unit_usd": 13.89,
+    "pack": "2-499 pcs price",
+    "robot_usd": 152.79,
+    "link": "https://www.alibaba.com/product-detail/Feetech-STS3215-19KG-7-4V-Dual_1601651378267.html",
+    "role": "10 leg joints + dome yaw"
+   },
+   {
+    "item": "Seeed XIAO ESP32S3 Sense (camera, mic, 8 MB PSRAM)",
+    "qty": 1,
+    "unit_usd": 19.99,
+    "pack": "",
+    "robot_usd": 19.99,
+    "link": "https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html",
+    "role": "brain, camera eye, ears, Wi-Fi"
+   },
+   {
+    "item": "Waveshare Bus Servo Adapter (A)",
+    "qty": 1,
+    "unit_usd": 4.99,
+    "pack": "",
+    "robot_usd": 4.99,
+    "link": "https://www.waveshare.com/product/bus-servo-adapter-a.htm",
+    "role": "UART to half-duplex servo bus, power distribution"
+   },
+   {
+    "item": "1.28\" round GC9A01 240x240 IPS LCD",
+    "qty": 1,
+    "unit_usd": 6.24,
+    "pack": "",
+    "robot_usd": 6.24,
+    "link": "https://www.amazon.com/Display-Module-Interface-240x240-Arduino/dp/B0H8P12XMC",
+    "role": "the face / eye"
+   },
+   {
+    "item": "MPU-6050 GY-521 IMU",
+    "qty": 1,
+    "unit_usd": 8.59,
+    "pack": "3-pack",
+    "robot_usd": 2.86,
+    "link": "https://www.amazon.com/Kureelect-GY-521-Accelerometer-Compatible-Microcontroller/dp/B0H74JW12P",
+    "role": "balance + fall detection"
+   },
+   {
+    "item": "Pololu D36V6F5 5 V 600 mA step-down regulator",
+    "qty": 1,
+    "unit_usd": 6.95,
+    "pack": "",
+    "robot_usd": 6.95,
+    "link": "https://www.pololu.com/product/3792",
+    "role": "5 V for XIAO + LCD (sits in the head)"
+   },
+   {
+    "item": "LiFePO4 IFR18650 3.2 V 1500 mAh cell",
+    "qty": 2,
+    "unit_usd": 10.69,
+    "pack": "",
+    "robot_usd": 21.38,
+    "link": "https://onlybatteries.com/3-2-volt-lifepo4-18650-battery-1500-mah/",
+    "role": "2S pack, 6.4 V nominal / 7.3 V full"
+   },
+   {
+    "item": "2S LiFePO4 protection board (BMS)",
+    "qty": 1,
+    "unit_usd": 6.33,
+    "pack": "",
+    "robot_usd": 6.33,
+    "link": "https://www.amazon.com/Midzoo-Protection-Charging-Recovery-LightPower/dp/B0982CLQCS",
+    "role": "over-charge/discharge/short protection"
+   },
+   {
+    "item": "Passive piezo buzzer",
+    "qty": 1,
+    "unit_usd": 9.02,
+    "pack": "10-pack",
+    "robot_usd": 0.9,
+    "link": "https://www.amazon.com/MusRock-Frequency-Controllable-Electronic-Projects/dp/B0GXDX6ZY4",
+    "role": "beeps and chirps"
+   },
+   {
+    "item": "5.5x2.1 mm panel DC jack",
+    "qty": 1,
+    "unit_usd": 6.79,
+    "pack": "10-pack",
+    "robot_usd": 0.68,
+    "link": "https://www.amazon.com/CESS-Socket-Threaded-Connector-Adapter/dp/B07FK6MMGH",
+    "role": "charge port"
+   },
+   {
+    "item": "SS12D00 slide switch",
+    "qty": 1,
+    "unit_usd": 10.29,
+    "pack": "10-pack",
+    "robot_usd": 1.03,
+    "link": "https://www.amazon.com/dp/B07QC8HHCZ",
+    "role": "power switch"
+   },
+   {
+    "item": "Copper foil tape (5 cm used)",
+    "qty": 1,
+    "unit_usd": 8.99,
+    "pack": "10 m roll",
+    "robot_usd": 0.1,
+    "link": "https://www.amazon.com/MWRF-Source-Copper-Conductive-Adhesive/dp/B09FJ549C9",
+    "role": "capacitive touch pad inside the dome"
+   },
+   {
+    "item": "Silicone wire, 26 AWG (~2 m used)",
+    "qty": 1,
+    "unit_usd": 12.48,
+    "pack": "multi-colour kit",
+    "robot_usd": 1.0,
+    "link": "https://www.amazon.com/BNTECHGO-16-30-Gauge-Silicone-colors/dp/B01M9800TG",
+    "role": "harness"
+   },
+   {
+    "item": "M2/M3 screws + M3 heat-set inserts (~100 pcs used)",
+    "qty": 1,
+    "unit_usd": 15.41,
+    "pack": "kit, ~1/2 used",
+    "robot_usd": 7.71,
+    "link": "https://www.amazon.com/Mardatt-Threaded-Stainless-Printing-Components/dp/B0DRVJVQSD",
+    "role": "fasteners"
+   },
+   {
+    "item": "PLA filament (~360 g incl. 10% waste)",
+    "qty": 1,
+    "unit_usd": 19.99,
+    "pack": "1 kg refill",
+    "robot_usd": 7.2,
+    "link": "https://us.store.bambulab.com/products/pla-basic-filament",
+    "role": "14 printed parts"
+   }
+  ],
+  "total_usd": 240.15,
+  "servo_share": 0.636,
+  "charger": {
+   "item": "Bioenno 7.3 V 2 A LiFePO4 charger, 5.5x2.1 DC plug",
+   "usd": 24.99,
+   "link": "https://www.bioennopower.com/products/7-3v-2a-ac-to-dc-charger-dc-plug-for-6v-lifepo4-batteries-bpc-0602dc"
+  },
+  "retail_servo": {
+   "note": "Same servo at retail, 1 pc: Waveshare ST3215 $21.99",
+   "link": "https://www.waveshare.com/st3215-servo.htm?sku=22414",
+   "usd": 21.99
+  },
+  "total_with_retail_servos_usd": 329.25
+ },
+ "torque": {
+  "robot_mass_kg": 1.104,
+  "scenarios": {
+   "double stance, home crouch (sim, per leg)": {
+    "hip_yaw": 0.0,
+    "hip_roll": 0.001,
+    "hip_pitch": 0.02,
+    "knee": 0.14,
+    "ankle": 0.015
+   },
+   "double stance, deep squat for sit / get-up (sim, per leg)": {
+    "hip_yaw": 0.006,
+    "hip_roll": 0.002,
+    "hip_pitch": 0.031,
+    "knee": 0.089,
+    "ankle": 0.001
+   },
+   "single stance, home crouch, swing leg up": {
+    "hip_yaw": 0.0,
+    "hip_roll": 0.491,
+    "hip_pitch": 0.001,
+    "knee": 0.246,
+    "ankle": 0.001
+   },
+   "single stance, deeper crouch (knee 70 deg)": {
+    "hip_yaw": 0.0,
+    "hip_roll": 0.491,
+    "hip_pitch": 0.001,
+    "knee": 0.341,
+    "ankle": 0.01
+   }
+  },
+  "worst_static_nm": {
+   "hip_yaw": 0.006,
+   "hip_roll": 0.491,
+   "hip_pitch": 0.031,
+   "knee": 0.341,
+   "ankle": 0.015
+  },
+  "dynamic_factor": 2.0,
+  "design_peak_nm": {
+   "hip_yaw": 0.013,
+   "hip_roll": 0.982,
+   "hip_pitch": 0.062,
+   "knee": 0.681,
+   "ankle": 0.03
+  },
+  "candidates": {
+   "Feetech STS3215-C001 (6.4 V)": {
+    "spec": {
+     "stall": 1.65,
+     "rated": 0.42,
+     "mass_g": 55,
+     "price": 13.89,
+     "feedback": true
+    },
+    "robot_mass_kg": 1.104,
+    "worst_static_nm": 0.491,
+    "static_pct_of_stall": 30,
+    "walking_peak_pct_of_stall": 60,
+    "ok": true
+   },
+   "Feetech STS3032 (6 V)": {
+    "spec": {
+     "stall": 0.44,
+     "rated": 0.15,
+     "mass_g": 20,
+     "price": 32.99,
+     "feedback": true
+    },
+    "robot_mass_kg": 0.719,
+    "worst_static_nm": 0.32,
+    "static_pct_of_stall": 73,
+    "walking_peak_pct_of_stall": 145,
+    "ok": false
+   },
+   "Feetech SCS0009 (6 V)": {
+    "spec": {
+     "stall": 0.23,
+     "rated": 0.07,
+     "mass_g": 13,
+     "price": 9.0,
+     "feedback": true
+    },
+    "robot_mass_kg": 0.642,
+    "worst_static_nm": 0.286,
+    "static_pct_of_stall": 124,
+    "walking_peak_pct_of_stall": 248,
+    "ok": false
+   },
+   "TowerPro SG90 (5 V)": {
+    "spec": {
+     "stall": 0.18,
+     "rated": 0.05,
+     "mass_g": 9,
+     "price": 2.5,
+     "feedback": false
+    },
+    "robot_mass_kg": 0.598,
+    "worst_static_nm": 0.266,
+    "static_pct_of_stall": 148,
+    "walking_peak_pct_of_stall": 296,
+    "ok": false
+   }
+  },
+  "rule": "cheapest servo with position feedback whose worst static load is <= ~1/3 of stall, so 2x walking peaks stay <= ~2/3 of stall"
+ },
+ "stand": {
+  "passed": true,
+  "settle_5s": {
+   "fell": false,
+   "max_tilt_deg": 1.27,
+   "com_height_m": 0.162,
+   "com_drift_mm": -0.0,
+   "self_contacts": []
+  },
+  "passive_shove_survived_Ns": {
+   "forward": 0.5,
+   "backward": 0.4,
+   "left": 0.5,
+   "right": 0.5
+  },
+  "passive_shove_survived_m_s": {
+   "forward": 0.45,
+   "backward": 0.36,
+   "left": 0.45,
+   "right": 0.45
+  },
+  "static_torque_nm": {
+   "l_hip_yaw": 0.0,
+   "l_hip_roll": -0.001,
+   "l_hip_pitch": -0.02,
+   "l_knee": -0.138,
+   "l_ankle": -0.022,
+   "r_hip_yaw": -0.0,
+   "r_hip_roll": 0.0,
+   "r_hip_pitch": -0.02,
+   "r_knee": -0.138,
+   "r_ankle": -0.022,
+   "neck_yaw": -0.0
+  },
+  "max_static_torque_nm": 0.138,
+  "stall_limit_nm": 1.65,
+  "mass_kg": 1.104
+ },
+ "sysid": {
+  "true": {
+   "kp": 9.0,
+   "kd": 0.22,
+   "stall": 1.45,
+   "frictionloss": 0.08,
+   "damping": 0.12,
+   "armature": 0.03
+  },
+  "fitted": {
+   "kp": 9.0064,
+   "kd": 0.2207,
+   "stall": 1.4562,
+   "frictionloss": 0.0798,
+   "damping": 0.1204,
+   "armature": 0.0301
+  },
+  "error_pct": {
+   "kp": 0.1,
+   "kd": 0.3,
+   "stall": 0.4,
+   "frictionloss": -0.2,
+   "damping": 0.3,
+   "armature": 0.4
+  },
+  "rmse_rad": 0.00297,
+  "note": "synthetic log (3 mrad noise) from known parameters; checks the fitting code, not the real servo"
+ },
+ "fw_test": {
+  "samples": 300,
+  "max_abs_error": 5.082420349022954e-07,
+  "passed": true
+ },
+ "walk_eval": {
+  "forward 0.15 m/s | nominal": {
+   "cmd": [
+    0.15,
+    0,
+    0
+   ],
+   "episodes": 3,
+   "falls": 0,
+   "mean_vx_m_s": -0.003,
+   "mean_yaw_rate": -0.033,
+   "mean_distance_m": 0.08,
+   "peak_torque_nm": 1.65,
+   "rms_torque_nm": 0.34,
+   "peak_torque_by_joint": {
+    "l_hip_yaw": 1.166,
+    "l_hip_roll": 1.514,
+    "l_hip_pitch": 1.65,
+    "l_knee": 1.471,
+    "l_ankle": 1.503,
+    "r_hip_yaw": 1.309,
+    "r_hip_roll": 1.519,
+    "r_hip_pitch": 1.518,
+    "r_knee": 1.492,
+    "r_ankle": 1.237
+   }
+  },
+  "forward 0.15 m/s | randomised": {
+   "cmd": [
+    0.15,
+    0,
+    0
+   ],
+   "episodes": 10,
+   "falls": 0,
+   "mean_vx_m_s": 0.003,
+   "mean_yaw_rate": -0.005,
+   "mean_distance_m": 0.09,
+   "peak_torque_nm": 1.65,
+   "rms_torque_nm": 0.414,
+   "peak_torque_by_joint": {
+    "l_hip_yaw": 1.348,
+    "l_hip_roll": 1.65,
+    "l_hip_pitch": 1.65,
+    "l_knee": 1.611,
+    "l_ankle": 1.65,
+    "r_hip_yaw": 1.458,
+    "r_hip_roll": 1.65,
+    "r_hip_pitch": 1.65,
+    "r_knee": 1.65,
+    "r_ankle": 1.65
+   }
+  },
+  "backward 0.08 m/s | nominal": {
+   "cmd": [
+    -0.08,
+    0,
+    0
+   ],
+   "episodes": 3,
+   "falls": 0,
+   "mean_vx_m_s": -0.0,
+   "mean_yaw_rate": -0.01,
+   "mean_distance_m": 0.04,
+   "peak_torque_nm": 1.538,
+   "rms_torque_nm": 0.327,
+   "peak_torque_by_joint": {
+    "l_hip_yaw": 1.301,
+    "l_hip_roll": 1.509,
+    "l_hip_pitch": 1.209,
+    "l_knee": 1.249,
+    "l_ankle": 1.538,
+    "r_hip_yaw": 1.314,
+    "r_hip_roll": 1.536,
+    "r_hip_pitch": 1.221,
+    "r_knee": 1.513,
+    "r_ankle": 1.297
+   }
+  },
+  "backward 0.08 m/s | randomised": {
+   "cmd": [
+    -0.08,
+    0,
+    0
+   ],
+   "episodes": 10,
+   "falls": 0,
+   "mean_vx_m_s": 0.002,
+   "mean_yaw_rate": -0.012,
+   "mean_distance_m": 0.06,
+   "peak_torque_nm": 1.65,
+   "rms_torque_nm": 0.404,
+   "peak_torque_by_joint": {
+    "l_hip_yaw": 1.362,
+    "l_hip_roll": 1.65,
+    "l_hip_pitch": 1.65,
+    "l_knee": 1.611,
+    "l_ankle": 1.605,
+    "r_hip_yaw": 1.65,
+    "r_hip_roll": 1.65,
+    "r_hip_pitch": 1.631,
+    "r_knee": 1.65,
+    "r_ankle": 1.552
+   }
+  },
+  "turn 0.6 rad/s | nominal": {
+   "cmd": [
+    0,
+    0,
+    0.6
+   ],
+   "episodes": 3,
+   "falls": 0,
+   "mean_vx_m_s": -0.0,
+   "mean_yaw_rate": -0.01,
+   "mean_distance_m": 0.04,
+   "peak_torque_nm": 1.561,
+   "rms_torque_nm": 0.293,
+   "peak_torque_by_joint": {
+    "l_hip_yaw": 0.541,
+    "l_hip_roll": 1.514,
+    "l_hip_pitch": 1.561,
+    "l_knee": 1.254,
+    "l_ankle": 0.943,
+    "r_hip_yaw": 1.3,
+    "r_hip_roll": 1.51,
+    "r_hip_pitch": 1.248,
+    "r_knee": 1.107,
+    "r_ankle": 1.292
+   }
+  },
+  "turn 0.6 rad/s | randomised": {
+   "cmd": [
+    0,
+    0,
+    0.6
+   ],
+   "episodes": 10,
+   "falls": 0,
+   "mean_vx_m_s": -0.005,
+   "mean_yaw_rate": -0.039,
+   "mean_distance_m": 0.07,
+   "peak_torque_nm": 1.65,
+   "rms_torque_nm": 0.388,
+   "peak_torque_by_joint": {
+    "l_hip_yaw": 1.488,
+    "l_hip_roll": 1.65,
+    "l_hip_pitch": 1.65,
+    "l_knee": 1.65,
+    "l_ankle": 1.65,
+    "r_hip_yaw": 1.447,
+    "r_hip_roll": 1.65,
+    "r_hip_pitch": 1.65,
+    "r_knee": 1.65,
+    "r_ankle": 1.523
+   }
+  },
+  "in place | nominal": {
+   "cmd": [
+    0,
+    0,
+    0
+   ],
+   "episodes": 3,
+   "falls": 0,
+   "mean_vx_m_s": -0.001,
+   "mean_yaw_rate": -0.013,
+   "mean_distance_m": 0.05,
+   "peak_torque_nm": 1.594,
+   "rms_torque_nm": 0.326,
+   "peak_torque_by_joint": {
+    "l_hip_yaw": 1.305,
+    "l_hip_roll": 1.52,
+    "l_hip_pitch": 1.211,
+    "l_knee": 1.246,
+    "l_ankle": 0.896,
+    "r_hip_yaw": 1.314,
+    "r_hip_roll": 1.531,
+    "r_hip_pitch": 1.222,
+    "r_knee": 1.594,
+    "r_ankle": 1.305
+   }
+  },
+  "in place | randomised": {
+   "cmd": [
+    0,
+    0,
+    0
+   ],
+   "episodes": 10,
+   "falls": 0,
+   "mean_vx_m_s": 0.002,
+   "mean_yaw_rate": -0.005,
+   "mean_distance_m": 0.08,
+   "peak_torque_nm": 1.65,
+   "rms_torque_nm": 0.406,
+   "peak_torque_by_joint": {
+    "l_hip_yaw": 1.301,
+    "l_hip_roll": 1.65,
+    "l_hip_pitch": 1.65,
+    "l_knee": 1.638,
+    "l_ankle": 1.65,
+    "r_hip_yaw": 1.46,
+    "r_hip_roll": 1.65,
+    "r_hip_pitch": 1.65,
+    "r_knee": 1.65,
+    "r_ankle": 1.647
+   }
+  }
+ },
+ "training": null,
+ "firmware_build": null,
+ "curve": [
+  [
+   4096,
+   39.6,
+   1.64
+  ],
+  [
+   16384,
+   49.7,
+   1.83
+  ],
+  [
+   28672,
+   59.3,
+   2.07
+  ],
+  [
+   40960,
+   59.5,
+   2.09
+  ],
+  [
+   53248,
+   76.0,
+   2.53
+  ],
+  [
+   65536,
+   66.7,
+   2.28
+  ],
+  [
+   77824,
+   91.2,
+   2.84
+  ],
+  [
+   90112,
+   125.2,
+   3.64
+  ],
+  [
+   102400,
+   120.3,
+   3.36
+  ],
+  [
+   114688,
+   124.6,
+   3.42
+  ],
+  [
+   126976,
+   146.3,
+   3.8
+  ],
+  [
+   139264,
+   173.3,
+   4.28
+  ],
+  [
+   151552,
+   158.9,
+   3.9
+  ],
+  [
+   163840,
+   168.9,
+   4.13
+  ],
+  [
+   176128,
+   180.4,
+   4.36
+  ],
+  [
+   188416,
+   180.9,
+   4.38
+  ],
+  [
+   200704,
+   166.7,
+   3.95
+  ],
+  [
+   212992,
+   172.9,
+   3.93
+  ],
+  [
+   225280,
+   161.6,
+   3.71
+  ],
+  [
+   237568,
+   149.8,
+   3.37
+  ],
+  [
+   249856,
+   183.0,
+   3.91
+  ],
+  [
+   262144,
+   207.8,
+   4.49
+  ],
+  [
+   274432,
+   174.3,
+   3.9
+  ],
+  [
+   286720,
+   192.7,
+   4.15
+  ],
+  [
+   299008,
+   239.4,
+   4.95
+  ],
+  [
+   311296,
+   224.4,
+   4.58
+  ],
+  [
+   323584,
+   208.3,
+   4.39
+  ],
+  [
+   335872,
+   213.8,
+   4.37
+  ],
+  [
+   348160,
+   237.3,
+   4.68
+  ],
+  [
+   360448,
+   241.0,
+   4.88
+  ],
+  [
+   372736,
+   253.6,
+   5.08
+  ],
+  [
+   385024,
+   275.0,
+   5.31
+  ],
+  [
+   397312,
+   283.1,
+   5.38
+  ],
+  [
+   409600,
+   257.8,
+   4.93
+  ],
+  [
+   421888,
+   237.4,
+   4.65
+  ],
+  [
+   434176,
+   255.5,
+   4.94
+  ],
+  [
+   446464,
+   252.5,
+   4.58
+  ],
+  [
+   458752,
+   253.8,
+   4.48
+  ],
+  [
+   471040,
+   298.6,
+   5.16
+  ],
+  [
+   483328,
+   305.2,
+   5.34
+  ],
+  [
+   495616,
+   322.9,
+   5.63
+  ],
+  [
+   507904,
+   317.6,
+   5.52
+  ],
+  [
+   520192,
+   302.2,
+   5.14
+  ],
+  [
+   532480,
+   321.4,
+   5.23
+  ],
+  [
+   544768,
+   319.7,
+   5.21
+  ],
+  [
+   557056,
+   277.3,
+   4.64
+  ],
+  [
+   569344,
+   294.6,
+   4.85
+  ],
+  [
+   581632,
+   337.9,
+   5.61
+  ],
+  [
+   593920,
+   338.6,
+   5.72
+  ],
+  [
+   606208,
+   330.7,
+   5.43
+  ],
+  [
+   618496,
+   338.3,
+   5.52
+  ],
+  [
+   630784,
+   339.9,
+   5.61
+  ],
+  [
+   643072,
+   338.4,
+   5.58
+  ],
+  [
+   655360,
+   337.3,
+   5.5
+  ],
+  [
+   667648,
+   376.8,
+   6.09
+  ],
+  [
+   679936,
+   382.8,
+   6.22
+  ],
+  [
+   692224,
+   402.9,
+   6.4
+  ],
+  [
+   704512,
+   347.4,
+   5.55
+  ],
+  [
+   716800,
+   344.2,
+   5.57
+  ],
+  [
+   729088,
+   380.4,
+   6.1
+  ],
+  [
+   741376,
+   410.1,
+   6.4
+  ],
+  [
+   753664,
+   422.6,
+   6.53
+  ],
+  [
+   765952,
+   413.0,
+   6.42
+  ],
+  [
+   778240,
+   427.5,
+   6.58
+  ],
+  [
+   790528,
+   435.0,
+   6.72
+  ],
+  [
+   802816,
+   460.2,
+   7.12
+  ],
+  [
+   815104,
+   480.7,
+   7.41
+  ],
+  [
+   827392,
+   467.8,
+   7.12
+  ],
+  [
+   839680,
+   485.4,
+   7.15
+  ],
+  [
+   851968,
+   505.1,
+   7.2
+  ],
+  [
+   864256,
+   541.1,
+   7.68
+  ],
+  [
+   876544,
+   557.3,
+   7.86
+  ],
+  [
+   888832,
+   547.9,
+   7.9
+  ],
+  [
+   901120,
+   521.5,
+   7.41
+  ],
+  [
+   913408,
+   527.3,
+   7.47
+  ],
+  [
+   925696,
+   511.1,
+   7.21
+  ],
+  [
+   937984,
+   551.8,
+   7.84
+  ],
+  [
+   950272,
+   547.2,
+   7.78
+  ],
+  [
+   962560,
+   568.0,
+   8.13
+  ],
+  [
+   974848,
+   569.4,
+   8.06
+  ],
+  [
+   987136,
+   587.0,
+   8.36
+  ],
+  [
+   999424,
+   577.1,
+   8.25
+  ],
+  [
+   1011712,
+   549.3,
+   7.89
+  ],
+  [
+   1024000,
+   537.6,
+   7.65
+  ],
+  [
+   1036288,
+   556.0,
+   7.7
+  ],
+  [
+   1048576,
+   570.2,
+   7.69
+  ],
+  [
+   1060864,
+   599.1,
+   8.0
+  ],
+  [
+   1073152,
+   621.4,
+   8.33
+  ],
+  [
+   1085440,
+   619.3,
+   8.37
+  ],
+  [
+   1097728,
+   621.9,
+   8.5
+  ],
+  [
+   1110016,
+   607.6,
+   8.42
+  ],
+  [
+   1122304,
+   596.7,
+   8.15
+  ],
+  [
+   1134592,
+   604.8,
+   8.16
+  ],
+  [
+   1146880,
+   613.6,
+   8.12
+  ],
+  [
+   1159168,
+   664.9,
+   8.54
+  ],
+  [
+   1171456,
+   672.5,
+   8.64
+  ],
+  [
+   1183744,
+   662.0,
+   8.64
+  ],
+  [
+   1196032,
+   631.4,
+   8.31
+  ],
+  [
+   1208320,
+   639.5,
+   8.39
+  ],
+  [
+   1220608,
+   640.7,
+   8.52
+  ],
+  [
+   1232896,
+   680.6,
+   8.93
+  ],
+  [
+   1245184,
+   697.1,
+   9.19
+  ],
+  [
+   1257472,
+   701.9,
+   9.21
+  ],
+  [
+   1269760,
+   722.9,
+   9.36
+  ],
+  [
+   1282048,
+   709.8,
+   9.18
+  ],
+  [
+   1294336,
+   697.5,
+   8.94
+  ],
+  [
+   1306624,
+   682.8,
+   8.69
+  ],
+  [
+   1318912,
+   667.7,
+   8.51
+  ],
+  [
+   1331200,
+   665.3,
+   8.5
+  ],
+  [
+   1343488,
+   651.9,
+   8.35
+  ],
+  [
+   1355776,
+   644.8,
+   8.37
+  ],
+  [
+   1368064,
+   637.8,
+   8.25
+  ],
+  [
+   1380352,
+   628.8,
+   8.2
+  ],
+  [
+   1392640,
+   642.0,
+   8.14
+  ],
+  [
+   1404928,
+   648.2,
+   8.24
+  ],
+  [
+   1417216,
+   655.8,
+   8.33
+  ],
+  [
+   1429504,
+   641.3,
+   8.22
+  ],
+  [
+   1441792,
+   657.6,
+   8.29
+  ],
+  [
+   1454080,
+   675.7,
+   8.37
+  ],
+  [
+   1466368,
+   697.4,
+   8.52
+  ],
+  [
+   1478656,
+   702.2,
+   8.59
+  ],
+  [
+   1490944,
+   715.6,
+   8.77
+  ],
+  [
+   1503232,
+   690.1,
+   8.56
+  ],
+  [
+   1515520,
+   659.2,
+   8.15
+  ],
+  [
+   1527808,
+   689.7,
+   8.47
+  ],
+  [
+   1540096,
+   683.4,
+   8.37
+  ],
+  [
+   1552384,
+   686.5,
+   8.47
+  ],
+  [
+   1564672,
+   703.0,
+   8.64
+  ],
+  [
+   1576960,
+   686.0,
+   8.3
+  ],
+  [
+   1589248,
+   679.8,
+   8.25
+  ],
+  [
+   1601536,
+   682.6,
+   8.32
+  ],
+  [
+   1613824,
+   689.0,
+   8.46
+  ],
+  [
+   1626112,
+   673.6,
+   8.36
+  ],
+  [
+   1638400,
+   644.9,
+   8.13
+  ],
+  [
+   1650688,
+   631.9,
+   8.04
+  ],
+  [
+   1662976,
+   676.9,
+   8.56
+  ],
+  [
+   1675264,
+   696.2,
+   8.63
+  ],
+  [
+   1687552,
+   706.6,
+   8.62
+  ],
+  [
+   1699840,
+   679.3,
+   8.14
+  ],
+  [
+   1712128,
+   698.0,
+   8.37
+  ],
+  [
+   1724416,
+   724.0,
+   8.62
+  ],
+  [
+   1736704,
+   730.8,
+   8.8
+  ],
+  [
+   1748992,
+   753.2,
+   8.99
+  ],
+  [
+   1748992,
+   753.2,
+   8.99
+  ]
+ ]
+}
