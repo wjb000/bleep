@@ -1,0 +1,8 @@
+{
+ "stall_nm": 1.65,
+ "noload_rad_s": 4.8,
+ "kp": 12.0,
+ "damping": 0.08,
+ "frictionloss": 0.05,
+ "armature": 0.02
+}

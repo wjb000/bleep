@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<robot name="bleep">
+  <link name="base">
+    <inertial><origin xyz="-0.010954 -1.1049e-05 0.23958"/><mass value="0.3734"/><inertia ixx="5.1522e-04" ixy="-1.4732e-07" ixz="-4.4337e-06" iyy="2.5970e-04" iyz="-3.2798e-08" izz="5.2889e-04"/></inertial>
+    <visual><geometry><mesh filename="meshes/base.obj"/></geometry></visual>
+    <collision name="body_tub"><origin xyz="-0.01 0 0.2336"/><geometry><box size="0.08 0.128 0.042"/></geometry></collision>
+    <collision name="body_lid"><origin xyz="-0.01 0 0.26685"/><geometry><box size="0.08 0.128 0.0245"/></geometry></collision>
+  </link>
+  <link name="l_hip_yaw">
+    <inertial><origin xyz="-0.00051683 -0.012261 -0.018401"/><mass value="0.0741"/><inertia ixx="1.7771e-05" ixy="4.1829e-09" ixz="3.0506e-10" iyy="1.2238e-05" iyz="-2.0873e-07" izz="2.1267e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/l_hip_yaw.obj"/></geometry></visual>
+    <collision name="l_hip_bracket"><origin xyz="-0.00255 -0.010453 -0.01695"/><geometry><box size="0.0399 0.054894 0.0337"/></geometry></collision>
+  </link>
+  <link name="l_hip_roll">
+    <inertial><origin xyz="-0.028946 -0.0070351 -0.038583"/><mass value="0.0806"/><inertia ixx="1.9302e-05" ixy="-5.6644e-07" ixz="-3.6335e-06" iyy="2.8269e-05" iyz="-8.0609e-07" izz="2.6331e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/l_hip_roll.obj"/></geometry></visual>
+    <collision name="l_hip_carrier"><origin xyz="-0.0264 -0.0072592 -0.020801"/><geometry><box size="0.061 0.044482 0.071598"/></geometry></collision>
+  </link>
+  <link name="l_hip_pitch">
+    <inertial><origin xyz="3.3921e-10 -0.014381 -0.049546"/><mass value="0.0755"/><inertia ixx="2.9067e-05" ixy="5.5320e-13" ixz="-1.3429e-13" iyy="2.5318e-05" iyz="-1.6216e-06" izz="1.2323e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/l_hip_pitch.obj"/></geometry></visual>
+    <collision name="l_thigh"><origin xyz="0 -0.01645 -0.0307"/><geometry><box size="0.032946 0.0411 0.0944"/></geometry></collision>
+  </link>
+  <link name="l_knee">
+    <inertial><origin xyz="-1.3354e-09 -0.01443 -0.044982"/><mass value="0.0750"/><inertia ixx="2.7321e-05" ixy="-2.7755e-13" ixz="4.4447e-12" iyy="2.3586e-05" iyz="-1.3838e-06" izz="1.2226e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/l_knee.obj"/></geometry></visual>
+    <collision name="l_shin"><origin xyz="0 -0.01645 -0.0282"/><geometry><box size="0.032946 0.0411 0.0894"/></geometry></collision>
+  </link>
+  <link name="l_ankle">
+    <inertial><origin xyz="-0.00077649 -0.016336 -0.015451"/><mass value="0.0217"/><inertia ixx="5.1536e-06" ixy="1.1986e-07" ixz="-1.2973e-07" iyy="1.2149e-05" iyz="-9.2676e-07" izz="1.4088e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/l_ankle.obj"/></geometry></visual>
+    <collision name="l_foot_sole"><origin xyz="-0.002 -0.02095 -0.0245"/><geometry><box size="0.096 0.0501 0.005"/></geometry></collision>
+  </link>
+  <link name="r_hip_yaw">
+    <inertial><origin xyz="-0.00051683 0.012261 -0.018401"/><mass value="0.0741"/><inertia ixx="1.7771e-05" ixy="-4.1829e-09" ixz="3.0506e-10" iyy="1.2238e-05" iyz="2.0873e-07" izz="2.1267e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/r_hip_yaw.obj"/></geometry></visual>
+    <collision name="r_hip_bracket"><origin xyz="-0.00255 0.010453 -0.01695"/><geometry><box size="0.0399 0.054894 0.0337"/></geometry></collision>
+  </link>
+  <link name="r_hip_roll">
+    <inertial><origin xyz="-0.028946 0.0070351 -0.038583"/><mass value="0.0806"/><inertia ixx="1.9302e-05" ixy="5.6644e-07" ixz="-3.6335e-06" iyy="2.8269e-05" iyz="8.0609e-07" izz="2.6331e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/r_hip_roll.obj"/></geometry></visual>
+    <collision name="r_hip_carrier"><origin xyz="-0.0264 0.0072592 -0.020801"/><geometry><box size="0.061 0.044482 0.071598"/></geometry></collision>
+  </link>
+  <link name="r_hip_pitch">
+    <inertial><origin xyz="3.3921e-10 0.014381 -0.049546"/><mass value="0.0755"/><inertia ixx="2.9067e-05" ixy="-5.5320e-13" ixz="-1.3429e-13" iyy="2.5318e-05" iyz="1.6216e-06" izz="1.2323e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/r_hip_pitch.obj"/></geometry></visual>
+    <collision name="r_thigh"><origin xyz="0 0.01645 -0.0307"/><geometry><box size="0.032946 0.0411 0.0944"/></geometry></collision>
+  </link>
+  <link name="r_knee">
+    <inertial><origin xyz="-1.3354e-09 0.01443 -0.044982"/><mass value="0.0750"/><inertia ixx="2.7321e-05" ixy="2.7755e-13" ixz="4.4447e-12" iyy="2.3586e-05" iyz="1.3838e-06" izz="1.2226e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/r_knee.obj"/></geometry></visual>
+    <collision name="r_shin"><origin xyz="0 0.01645 -0.0282"/><geometry><box size="0.032946 0.0411 0.0894"/></geometry></collision>
+  </link>
+  <link name="r_ankle">
+    <inertial><origin xyz="-0.00077649 0.016336 -0.015451"/><mass value="0.0217"/><inertia ixx="5.1536e-06" ixy="-1.1986e-07" ixz="-1.2973e-07" iyy="1.2149e-05" iyz="9.2676e-07" izz="1.4088e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/r_ankle.obj"/></geometry></visual>
+    <collision name="r_foot_sole"><origin xyz="-0.002 0.02095 -0.0245"/><geometry><box size="0.096 0.0501 0.005"/></geometry></collision>
+  </link>
+  <link name="head">
+    <inertial><origin xyz="0.0091904 0.0028866 0.024162"/><mass value="0.0765"/><inertia ixx="4.6971e-05" ixy="-2.4125e-06" ixz="-3.6716e-06" iyy="5.8910e-05" iyz="-2.1174e-06" izz="6.9206e-05"/></inertial>
+    <visual><geometry><mesh filename="meshes/head.obj"/></geometry></visual>
+    <collision name="head_dome"><origin xyz="0.001 -2.2877e-06 0.0333"/><geometry><box size="0.094 0.091959 0.0594"/></geometry></collision>
+  </link>
+  <joint name="l_hip_yaw" type="revolute"><parent link="base"/><child link="l_hip_yaw"/><origin xyz="0 0.046 0.2122"/><axis xyz="0 0 1"/><limit lower="-0.4363" upper="0.4363" effort="1.65" velocity="4.8"/></joint>
+  <joint name="l_hip_roll" type="revolute"><parent link="l_hip_yaw"/><child link="l_hip_roll"/><origin xyz="0.019 0 -0.0187"/><axis xyz="1 0 0"/><limit lower="-0.3491" upper="0.3491" effort="1.65" velocity="4.8"/></joint>
+  <joint name="l_hip_pitch" type="revolute"><parent link="l_hip_roll"/><child link="l_hip_pitch"/><origin xyz="-0.019 0.012 -0.0415"/><axis xyz="0 1 0"/><limit lower="-1.5708" upper="0.5236" effort="1.65" velocity="4.8"/></joint>
+  <joint name="l_knee" type="revolute"><parent link="l_hip_pitch"/><child link="l_knee"/><origin xyz="0 0.0045 -0.065"/><axis xyz="0 1 0"/><limit lower="-0.0873" upper="1.9199" effort="1.65" velocity="4.8"/></joint>
+  <joint name="l_ankle" type="revolute"><parent link="l_knee"/><child link="l_ankle"/><origin xyz="0 0.0045 -0.06"/><axis xyz="0 1 0"/><limit lower="-0.7854" upper="0.7854" effort="1.65" velocity="4.8"/></joint>
+  <joint name="r_hip_yaw" type="revolute"><parent link="base"/><child link="r_hip_yaw"/><origin xyz="0 -0.046 0.2122"/><axis xyz="0 0 1"/><limit lower="-0.4363" upper="0.4363" effort="1.65" velocity="4.8"/></joint>
+  <joint name="r_hip_roll" type="revolute"><parent link="r_hip_yaw"/><child link="r_hip_roll"/><origin xyz="0.019 0 -0.0187"/><axis xyz="1 0 0"/><limit lower="-0.3491" upper="0.3491" effort="1.65" velocity="4.8"/></joint>
+  <joint name="r_hip_pitch" type="revolute"><parent link="r_hip_roll"/><child link="r_hip_pitch"/><origin xyz="-0.019 -0.012 -0.0415"/><axis xyz="0 1 0"/><limit lower="-1.5708" upper="0.5236" effort="1.65" velocity="4.8"/></joint>
+  <joint name="r_knee" type="revolute"><parent link="r_hip_pitch"/><child link="r_knee"/><origin xyz="0 -0.0045 -0.065"/><axis xyz="0 1 0"/><limit lower="-0.0873" upper="1.9199" effort="1.65" velocity="4.8"/></joint>
+  <joint name="r_ankle" type="revolute"><parent link="r_knee"/><child link="r_ankle"/><origin xyz="0 -0.0045 -0.06"/><axis xyz="0 1 0"/><limit lower="-0.7854" upper="0.7854" effort="1.65" velocity="4.8"/></joint>
+  <joint name="neck_yaw" type="revolute"><parent link="base"/><child link="head"/><origin xyz="0 0 0.2795"/><axis xyz="0 0 1"/><limit lower="-2.0944" upper="2.0944" effort="1.65" velocity="4.8"/></joint>
+</robot>
